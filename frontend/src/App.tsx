@@ -28,6 +28,7 @@ function App() {
             placeholder='enter url or IP address'
             ></input>
             <button onClick={handleSubmit}>Get Data</button>
+            <button onClick={handleSubmit}>Get Data</button>
         </div>
     )
 
