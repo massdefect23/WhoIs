@@ -10,8 +10,8 @@ import {
 import './App.css';
 
 function App() {
-  const [domain, setDomain] = useState("");
-  const [data, setData] = useState("");
+  const [domain, setDomain] = useState<string>("");
+  const [data, setData] = useState<any>("");
 
   const handleInput = (event: React.ChangeEvent<HTMLInputElement>) => {
     setDomain(event.target.value);

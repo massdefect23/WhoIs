@@ -28,4 +28,16 @@ h1 {
   overflow: auto;
   white-space: pre-wrap;
   word-wrap: break-word;
+  animation: fadeIn 1s;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
