@@ -5,6 +5,7 @@ function App() {
     const [data, setData] = useState('');
 
 
+
     const handleSubmit = async () => {
         try {
             const res = await fetch('http://localhost:5000/api', {
@@ -26,6 +27,7 @@ function App() {
             <input
             placeholder='enter url or IP address'
             ></input>
+            <button onClick={handleSubmit}>Get Data</button>
         </div>
     )
 
