@@ -1,11 +1,16 @@
-from Flask import Flask
+from flask import Flask, request, jsonify
+import whois
 
 
 app=Flask(__name__)
 
-@app.route('/')
-def hello():
-	return 'hello'
+@app.route('/', methods=['POST'])
+def get_info():
+	domain = request.json['domain']
+	data = whois.whois(domain)
+	response = jsonify(data), 200
+	return response
+		
 
 
 
