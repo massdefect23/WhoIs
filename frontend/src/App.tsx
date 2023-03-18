@@ -7,6 +7,7 @@ import {
   Typography,
   Paper,
 } from "@mui/material";
+import './App.css';
 
 function App() {
   const [domain, setDomain] = useState("");
@@ -50,9 +51,11 @@ function App() {
           fullWidth
           margin="normal"
         />
-        <Button onClick={handleSubmit} variant="contained" color="primary">Click</Button>
-        <br/>
-        {data && <Paper>{data}</Paper>}
+        <Button onClick={handleSubmit} variant="contained" color="primary">
+          Click
+        </Button>
+        <br />
+        {data && <pre className="data-output">{JSON.stringify(data, null, 2)}</pre>}
       </Box>
     </Container>
   );
