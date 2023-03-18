@@ -4,7 +4,9 @@ function App() {
     const [domain, setDomain] = useState('');
     const [data, setData] = useState('');
 
-
+    const handleInput = (event: React.ChangeEvent<HTMLInputElement>) => {
+      setDomain(event.target.value);
+    };
 
     const handleSubmit = async () => {
         try {
@@ -26,9 +28,11 @@ function App() {
             <h1>WhoIs Information</h1>
             <input
             placeholder='enter url or IP address'
+            value={domain}
+            onChange={handleInput}
             ></input>
             <button onClick={handleSubmit}>Get Data</button>
-            <button onClick={handleSubmit}>Get Data</button>
+            {data && <pre>{data}</pre>}
         </div>
     )
 
