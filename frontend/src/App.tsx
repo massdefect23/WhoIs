@@ -46,7 +46,7 @@ function App() {
           onChange={handleInput}
           variant="outlined"
           value={domain}
-          placeholder="Enter a domain name"
+          placeholder="Please enter IP address or domain name"
           fullWidth
           margin="normal"
         />
