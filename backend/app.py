@@ -4,7 +4,7 @@ import whois
 
 app=Flask(__name__)
 
-@app.route('/', methods=['POST'])
+@app.route('/api', methods=['POST'])
 def get_info():
 	domain = request.json['domain']
 	data = whois.whois(domain)
