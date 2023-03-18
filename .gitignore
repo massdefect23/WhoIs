@@ -1,5 +1,7 @@
 venv*/
 node_modules*/
+__pycache__*/
+.pytest_cache*/
 
 # frontend dependencies
 /node_modules
