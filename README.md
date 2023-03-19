@@ -1,4 +1,4 @@
-# Dependency notes
+# Notes
 
 For Python dependencies:
 `pip install -r requirements.txt`
