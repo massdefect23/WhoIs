@@ -1,3 +1,16 @@
+# Dependency notes
+
+For Python dependencies:
+`pip install -r requirements.txt`
+
+For node dependencies:
+- Change directory to the frontend folder, then enter in the terminal
+`npm install`
+
+
+
+
+
 Potential improvements:
 * Create a React project from scratch
 	- Less libaries 
